@@ -58,4 +58,4 @@ Install the following libraries via the Arduino Library Manager (`Ctrl+Shift+I`)
 ### 2. Installation
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/your-repo-name.git](https://github.com/YOUR_USERNAME/your-repo-name.git)
+   git clone https://github.com/Rajaka-jay/Arduino-temp-logger-wokwi.git
