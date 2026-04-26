@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "author": "J.A.Y. Rajaka ",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": -58.2, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -191.7, "left": 90.6, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 25.6,
+      "left": 226.4,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-microsd-card", "id": "sd1", "top": 38.63, "left": -211.13, "attrs": {} }
+  ],
+  "connections": [
+    [ "lcd1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "lcd1:GND", "uno:GND.2", "black", [ "h0" ] ],
+    [ "lcd1:SDA", "uno:A4", "cyan", [ "h0" ] ],
+    [ "lcd1:SCL", "uno:A5", "violet", [ "h0" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "dht1:SDA", "uno:2", "cyan", [ "v0" ] ],
+    [ "dht1:GND", "uno:GND.3", "black", [ "v0" ] ],
+    [ "sd1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "sd1:GND", "uno:GND.3", "black", [ "h0" ] ],
+    [ "sd1:CS", "uno:4", "white", [ "h0" ] ],
+    [ "sd1:SCK", "uno:13", "orange", [ "h0" ] ],
+    [ "sd1:DO", "uno:12", "#8f4814", [ "h0" ] ],
+    [ "sd1:DI", "uno:11", "gold", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
